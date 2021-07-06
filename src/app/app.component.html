@@ -1,0 +1,6 @@
+<ng-select [items]="listArrayManyElements" placeholder="Select" [(ngModel)]="Selected" [title]="Selected"
+    bindLabel="name" bindValue="name">
+    <ng-template ng-option-tmp let-item="item">
+        <div [title]="item.name">{{item.name}}</div>
+    </ng-template>
+</ng-select>
